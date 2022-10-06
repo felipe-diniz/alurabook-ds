@@ -1,21 +1,46 @@
-import React from "react"
-import styled from "styled-components"
+import React from 'react';
+import styled, { css } from 'styled-components';
 
-const BotaoEstilizado = styled.button`
-  background: #EB9800;
+export interface AbBotaoProps {
+  texto?: string;
+  tipo?: 'primario' | 'secundario';
+  onClick?: () => void;
+}
+
+const BotaoEstilizado = styled.button<AbBotaoProps>`
+  background: ${(props: AbBotaoProps) =>
+    props.tipo === 'primario' ? '#EB9B00' : '#FFF'};
   padding: 16px 32px;
-  border: 2px solid #EB9800;
-  color: #FFF;
+  border: 2px solid #EB9B00;
+  color: ${(props: AbBotaoProps) =>
+    props.tipo === 'primario' ? '#FFF' : '#EB9B00'};
   font-size: 20px;
   cursor: pointer;
-  &:hover {
-    background: #B87900;
-    border: 2px solid #B87900;
-  } 
-`
+  ${(props: AbBotaoProps) =>
+    props.tipo === 'primario'
+      ? css`
+          &:hover {
+            background: #b87900;
+            border: 2px solid #b87900;
+          }
+        `
+      : css`
+          &:hover {
+            background: #fff;
+            border: 2px solid #b87900;
+            color: #b87900;
+          }
+        `}
+`;
 
-export const AbBotao = () => {
+export const AbBotao = ({
+  texto,
+  tipo = 'primario',
+  onClick,
+}: AbBotaoProps) => {
   return (
-    <BotaoEstilizado>Clique aqui</BotaoEstilizado>
-  )
-}
+    <BotaoEstilizado onClick={onClick} tipo={tipo}>
+      {texto}
+    </BotaoEstilizado>
+  );
+};
