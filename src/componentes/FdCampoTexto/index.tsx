@@ -26,10 +26,10 @@ const StyledCampo = styled.div`
 `;
 
 export interface FdCampoTextoProps {
-  label: string;
-  placeholder: string;
-  value: string;
-  type?: 'text' | 'email' | 'password' | 'date';
+  label?: string;
+  placeholder?: string;
+  value?: string;
+  type: 'text' | 'email' | 'password' | 'date';
   onChange: (value: string) => void;
 }
 
