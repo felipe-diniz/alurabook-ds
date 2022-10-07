@@ -1,3 +1,15 @@
+# v0.3.6 (Fri Oct 07 2022)
+
+#### ⚠️ Pushed to `main`
+
+- Corrigindo botão secundário ([@felipe-diniz](https://github.com/felipe-diniz))
+
+#### Authors: 1
+
+- [@felipe-diniz](https://github.com/felipe-diniz)
+
+---
+
 # v0.3.5 (Fri Oct 07 2022)
 
 #### ⚠️ Pushed to `main`
