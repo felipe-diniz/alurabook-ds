@@ -36,11 +36,11 @@ export interface FdCampoTextoProps {
 
 
 export const FdCampoTexto = ({
-  label,
-  value,
+  label='',
+  value='',
   onChange,
   type = 'text',
-  placeholder,
+  placeholder='',
 }: FdCampoTextoProps) => {
   let id = label
   return (
