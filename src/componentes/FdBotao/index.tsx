@@ -9,7 +9,7 @@ export interface FdBotaoProps {
 
 const BotaoEstilizado = styled.button<FdBotaoProps>`
   background: ${(props: FdBotaoProps) =>
-    props.tipo === 'primario' ? '#EB9B00' : '#FFF'};
+    props.tipo === 'primario' ? '#EB9B00' : 'transparent'};
   padding: 16px 32px;
   border: 2px solid #EB9B00;
   color: ${(props: FdBotaoProps) =>
@@ -26,7 +26,6 @@ const BotaoEstilizado = styled.button<FdBotaoProps>`
         `
       : css`
           &:hover {
-            background: #fff;
             border: 2px solid #b87900;
             color: #b87900;
           }
