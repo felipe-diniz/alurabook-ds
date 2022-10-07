@@ -1,3 +1,19 @@
+# v0.3.2 (Fri Oct 07 2022)
+
+#### 🐛 Bug Fix
+
+- Adicionando Licença de Software [#1](https://github.com/felipe-diniz/fdnz-ds/pull/1) ([@felipe-diniz](https://github.com/felipe-diniz))
+
+#### ⚠️ Pushed to `main`
+
+- Delete LICENSE.md ([@felipe-diniz](https://github.com/felipe-diniz))
+
+#### Authors: 1
+
+- [@felipe-diniz](https://github.com/felipe-diniz)
+
+---
+
 # v0.3.1 (Thu Oct 06 2022)
 
 #### ⚠️ Pushed to `main`
