@@ -1,3 +1,15 @@
+# v0.3.3 (Fri Oct 07 2022)
+
+#### ⚠️ Pushed to `main`
+
+- corrigindo arquivo github action ([@felipe-diniz](https://github.com/felipe-diniz))
+
+#### Authors: 1
+
+- [@felipe-diniz](https://github.com/felipe-diniz)
+
+---
+
 # v0.3.2 (Fri Oct 07 2022)
 
 #### 🐛 Bug Fix
