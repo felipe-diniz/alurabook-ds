@@ -25,7 +25,7 @@ const StyledCampo = styled.div`
   }
 `;
 
-export interface AbCampoTextoProps {
+export interface FdCampoTextoProps {
   label: string;
   placeholder: string;
   value: string;
@@ -33,17 +33,21 @@ export interface AbCampoTextoProps {
   onChange: (value: string) => void;
 }
 
-export const AbCampoTexto = ({
+
+
+export const FdCampoTexto = ({
   label,
   value,
   onChange,
   type = 'text',
   placeholder,
-}: AbCampoTextoProps) => {
+}: FdCampoTextoProps) => {
+  let id = label
   return (
     <StyledCampo>
-      <label>{label}</label>
+      <label htmlFor={id}>{label}</label>
       <input
+        id={id}
         value={value}
         type={type}
         placeholder={placeholder}

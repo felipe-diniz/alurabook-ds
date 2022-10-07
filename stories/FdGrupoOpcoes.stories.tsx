@@ -1,14 +1,14 @@
 import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-import { AbGrupoOpcoes, AbGrupoOpcoesProps } from '../src';
+import { FdGrupoOpcoes, FdGrupoOpcoesProps } from '../src';
 
 export default {
-  title: 'Componentes/AbGrupoOpcoes',
-  component: AbGrupoOpcoes,
-} as ComponentMeta<typeof AbGrupoOpcoes>;
+  title: 'Componentes/FdGrupoOpcoes',
+  component: FdGrupoOpcoes,
+} as ComponentMeta<typeof FdGrupoOpcoes>;
 
-const Template: ComponentStory<typeof AbGrupoOpcoes> = args => (
-  <AbGrupoOpcoes {...args} />
+const Template: ComponentStory<typeof FdGrupoOpcoes> = args => (
+  <FdGrupoOpcoes {...args} />
 );
 
 export const Padrao = Template.bind({});
@@ -34,4 +34,4 @@ Padrao.args = {
       rodape: '.pdf, .epub, .mob',
     }
   ]
-} as AbGrupoOpcoesProps;
+} as FdGrupoOpcoesProps;

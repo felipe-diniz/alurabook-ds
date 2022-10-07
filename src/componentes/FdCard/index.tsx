@@ -2,7 +2,7 @@
 import React, { ReactNode } from "react"
 import styled from "styled-components";
 
-export interface AbCardProps {
+export interface FdCardProps {
     children: ReactNode
 }
 
@@ -13,7 +13,7 @@ const CardStyled = styled.div`
     border-radius: 10px;
 `
 
-export const AbCard = ({ children }: AbCardProps) => {
+export const FdCard = ({ children }: FdCardProps) => {
     return (
         <CardStyled>
             {children}

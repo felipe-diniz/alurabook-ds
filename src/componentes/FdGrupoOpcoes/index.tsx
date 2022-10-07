@@ -35,22 +35,22 @@ const StyledSection = styled.section<{ selecionado: boolean }>`
   }
 `;
 
-export interface AbGrupoOpcao {
+export interface FdGrupoOpcao {
   id: number;
   titulo: string;
   corpo: string;
   rodape: string;
 }
 
-export interface AbGrupoOpcoesProps {
-  opcoes: AbGrupoOpcao[];
-  valorPadrao?: AbGrupoOpcao | null;
-  onChange?: (opcao: AbGrupoOpcao) => void;
+export interface FdGrupoOpcoesProps {
+  opcoes: FdGrupoOpcao[];
+  valorPadrao?: FdGrupoOpcao | null;
+  onChange?: (opcao: FdGrupoOpcao) => void;
 }
 
-export const AbGrupoOpcoes = ({ opcoes, onChange, valorPadrao }: AbGrupoOpcoesProps) => {
-  const [selecao, setSelecao] = useState<AbGrupoOpcao | null>(valorPadrao ?? null);
-  const aoSelecionar = (opcao: AbGrupoOpcao): void => {
+export const FdGrupoOpcoes = ({ opcoes, onChange, valorPadrao }: FdGrupoOpcoesProps) => {
+  const [selecao, setSelecao] = useState<FdGrupoOpcao | null>(valorPadrao ?? null);
+  const aoSelecionar = (opcao: FdGrupoOpcao): void => {
     setSelecao(opcao);
     if (onChange) {
       onChange(opcao)

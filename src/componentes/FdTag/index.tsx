@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-export interface AbTagProps {
+export interface FdTagProps {
   texto: string
 }
 
@@ -15,6 +15,6 @@ const StyledTag = styled.div`
     font-family: sans-serif;
 `
 
-export const AbTag = ({texto}: AbTagProps) => {
+export const FdTag = ({texto}: FdTagProps) => {
   return ( <StyledTag>{texto}</StyledTag> )
 }
